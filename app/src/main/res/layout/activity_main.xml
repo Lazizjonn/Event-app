@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#CC7442EA"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/appName"
+            style="@style/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/event_detector"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:background="#CC828FFF"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="4dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/screenOnLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/screenOnCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="166dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/screenOnImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/screen_on" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/screenOnText"
+                    style="@style/textViewStyle"
+                    android:text="@string/screen_on"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/screenOnSwitch"
+
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/screenOffLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/screenOffCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/screenOffImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/screen_off" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/screenOffText"
+                    style="@style/textViewStyle"
+                    android:text="@string/screen_off"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/screenOffSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/powerConnectedLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/powerConnectedCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/powerConnectedImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/power_connected" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/powerConnectedText"
+                    style="@style/textViewStyle"
+                    android:text="@string/power_connected"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/powerConnectedSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/powerDisconnectedLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/powerDisconnectedCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/powerDisconnectedImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/power_disconnected" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/powerDisconnectedText"
+                    style="@style/textViewStyle"
+                    android:text="@string/power_disconnected"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/powerDisconnectedSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/airplaneModeChangedLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/airplaneModeChangedCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/airplaneModeChangedImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/airplane_mode" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/airplaneModeChangedText"
+                    style="@style/textViewStyle"
+                    android:text="@string/air_plane_mode_changed"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/airplaneModeChangedSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/batteryLowLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/batteryLowCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/batteryLowImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/battery_low" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/batteryLowText"
+                    style="@style/textViewStyle"
+                    android:text="@string/battery_low"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/batteryLowSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/batteryOkLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/batteryOkCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/batteryOkImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/battery_ok" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/batteryOkText"
+                    style="@style/textViewStyle"
+                    android:text="@string/battery_ok"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/batteryOkSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/timeChangedLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/timeChangedCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/timeChangedImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/time" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/timeChangedText"
+                    style="@style/textViewStyle"
+                    android:text="@string/time_changed"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/timeChangedSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/timeZoneLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/timeZoneCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/timeZoneImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/time_zone" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/timeZoneText"
+                    style="@style/textViewStyle"
+                    android:text="@string/time_zone_changed"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/timeZoneSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/shutDownLinear"
+                style="@style/linearStyle"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_intro_button">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/shutDownCardView"
+                    style="@style/cardViewStyle"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/shutDownImageView"
+                        style="@style/imageViewStyle"
+                        android:background="#CC7442EA"
+                        android:src="@drawable/shut_down" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/shutDownText"
+                    style="@style/textViewStyle"
+                    android:text="@string/shut_down"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/shutDownSwitch"
+                    style="@style/switchCompatStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

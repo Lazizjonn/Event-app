@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Event detector</string>
+    <string name="air_plane_mode_changed">Air plane mode changed</string>
+    <string name="screen_on">Screen on</string>
+    <string name="screen_off">Screen off</string>
+    <string name="power_connected">Power connected</string>
+    <string name="power_disconnected">Power disconnected</string>
+    <string name="battery_low">Battery low</string>
+    <string name="battery_ok">Battery ok</string>
+    <string name="time_changed">Time changed</string>
+    <string name="time_zone_changed">Time zone changed</string>
+    <string name="shut_down">Shut down</string>
+    <string name="device_storage_low">Device storage low</string>
+    <string name="event_detector">Event detector</string>
+</resources>
